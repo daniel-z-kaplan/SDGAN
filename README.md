@@ -19,3 +19,11 @@ BIBLIOGRAPHY (incomplete)
 * [Refining Generative Process with Discriminator Guidance in Score-based Diffusion Models](https://arxiv.org/abs/2211.17091)
 * [Refining activation downsampling with SoftPool](https://arxiv.org/abs/2101.00440)
 * [Adversarial score matching and improved sampling for image generation](https://arxiv.org/abs/2009.05475)
+
+
+
+
+# LDM Steps
+
+Run conda install as per normal, then downgrade torchmetrics to 0.5.0.
+Run ```bash scripts/download_first_stages.sh```, then ```bash scripts/download_models.sh```
