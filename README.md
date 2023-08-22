@@ -19,3 +19,11 @@ BIBLIOGRAPHY (incomplete)
 * [Refining Generative Process with Discriminator Guidance in Score-based Diffusion Models](https://arxiv.org/abs/2211.17091)
 * [Refining activation downsampling with SoftPool](https://arxiv.org/abs/2101.00440)
 * [Adversarial score matching and improved sampling for image generation](https://arxiv.org/abs/2009.05475)
+
+Need to run both download scripts first.
+
+Download the data from my huggingface repository.
+
+Make a folder in taming/data = data.
+In latent/data, put the celebahq train & val txt from taming-transformers/data
+```CUDA_VISIBLE_DEVICES=0 python3 main.py --base configs/latent-diffusion/celebahq-ldm-vq-4.yaml -t --gpus 0, --resume models/ldm/celeba256/```
