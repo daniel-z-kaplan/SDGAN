@@ -27,3 +27,5 @@ Download the data from my huggingface repository.
 Make a folder in taming/data = data.
 In latent/data, put the celebahq train & val txt from taming-transformers/data
 ```CUDA_VISIBLE_DEVICES=0 python3 main.py --base configs/latent-diffusion/celebahq-ldm-vq-4.yaml -t --gpus 0, --resume models/ldm/celeba256/```
+
+Model gets copied into celeba/checkpoints, and renamed last.ckpt
