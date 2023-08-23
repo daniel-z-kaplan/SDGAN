@@ -22,6 +22,14 @@ BIBLIOGRAPHY (incomplete)
 
 Need to run both download scripts first.
 
+For celeba:
+https://drive.google.com/drive/folders/0B4qLcYyJmiz0TXY1NG02bzZVRGs?resourcekey=0-arAVTUfW9KRhN-irJchVKQ
+https://drive.google.com/drive/folders/0B7EVK8r0v71pWEZsZE9oNnFzTm8?resourcekey=0-5BR16BdXnb8hVj6CNHKzLg
+
+Download both of those.
+
+Unzip the 7z.
+
 Download the data from my huggingface repository.
 
 Make a folder in taming/data = data.
@@ -29,3 +37,5 @@ In latent/data, put the celebahq train & val txt from taming-transformers/data
 ```CUDA_VISIBLE_DEVICES=0 python3 main.py --base configs/latent-diffusion/celebahq-ldm-vq-4.yaml -t --gpus 0, --resume models/ldm/celeba256/```
 
 Model gets copied into celeba/checkpoints, and renamed last.ckpt
+
+Upgrade torch I guess...
