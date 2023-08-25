@@ -20,22 +20,40 @@ BIBLIOGRAPHY (incomplete)
 * [Refining activation downsampling with SoftPool](https://arxiv.org/abs/2101.00440)
 * [Adversarial score matching and improved sampling for image generation](https://arxiv.org/abs/2009.05475)
 
-Need to run both download scripts first.
+
+### LDM Stuff
+
+
+https://github.com/CompVis/latent-diffusion/tree/main
+Download above repository.
+Create conda env as specified.
+Downgrade torchmetrics to 0.5.0.
+Upgrade torch to most recent version.
+
+
+Need to run both download scripts in LDM repo.
+
+
+Download the data from https://huggingface.co/datasets/KublaiKhan1/CelebA-HQ
+It goes into latent-diffusion/data/celebahq. (The raw numpy files go there)
+
+
+In latent-diffusion/data, put the celebahq train & val txt from src/taming-transformers/data
+
+
+Model gets copied into latent-diffusion/models/ldm/celeba256/checkpoints, and renamed last.ckpt
+
+This is what I run, might not work in JEWELS.
+```python3 main.py --base configs/latent-diffusion/celebahq-ldm-vq-4.yaml -t --resume models/ldm/celeba256/ --gpus=0,```
+
+
+
+
+
+
+##
+
 
 For celeba:
 https://drive.google.com/drive/folders/0B4qLcYyJmiz0TXY1NG02bzZVRGs?resourcekey=0-arAVTUfW9KRhN-irJchVKQ
 https://drive.google.com/drive/folders/0B7EVK8r0v71pWEZsZE9oNnFzTm8?resourcekey=0-5BR16BdXnb8hVj6CNHKzLg
-
-Download both of those.
-
-Unzip the 7z.
-
-Download the data from my huggingface repository.
-
-Make a folder in taming/data = data.
-In latent/data, put the celebahq train & val txt from taming-transformers/data
-```CUDA_VISIBLE_DEVICES=0 python3 main.py --base configs/latent-diffusion/celebahq-ldm-vq-4.yaml -t --gpus 0, --resume models/ldm/celeba256/```
-
-Model gets copied into celeba/checkpoints, and renamed last.ckpt
-
-Upgrade torch I guess...
