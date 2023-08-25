@@ -46,6 +46,10 @@ Model gets copied into latent-diffusion/models/ldm/celeba256/checkpoints, and re
 This is what I run, might not work in JEWELS.
 ```python3 main.py --base configs/latent-diffusion/celebahq-ldm-vq-4.yaml -t --resume models/ldm/celeba256/ --gpus=0,```
 
+Things to note while running this.
+If you get errors regarding NPY files, just rerun.
+If you get other errors, try rerunning again.
+
 
 
 
