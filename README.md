@@ -34,8 +34,8 @@ Upgrade torch to most recent version.
 Need to run both download scripts in LDM repo.
 
 
-Download the data from https://huggingface.co/datasets/KublaiKhan1/CelebA-HQ
-It goes into latent-diffusion/data/celebahq. (The raw numpy files go there)
+Download the data from https://huggingface.co/datasets/KublaiKhan1/CelebA-HQ. It will be 3 folders.
+The contents of those folders goes into latent-diffusion/data/celebahq. There should be 30k files there after this step.
 
 
 In latent-diffusion/data, put the celebahq train & val txt from src/taming-transformers/data
