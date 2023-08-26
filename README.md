@@ -32,6 +32,8 @@ Upgrade torch to most recent version.
 
 
 Need to run both download scripts in LDM repo.
+```bash scripts/download_first_stages.sh```
+```bash scripts/download_models.sh```
 
 
 Download the data from https://huggingface.co/datasets/KublaiKhan1/CelebA-HQ. It will be 3 folders.
