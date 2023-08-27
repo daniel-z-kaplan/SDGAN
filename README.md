@@ -36,8 +36,12 @@ Need to run both download scripts in LDM repo.
 ```bash scripts/download_models.sh```
 
 
-Download the data from https://huggingface.co/datasets/KublaiKhan1/CelebA-HQ.
-It will be 3 folders.
+There are three files to wget.
+```https://huggingface.co/datasets/KublaiKhan1/CelebA-HQ/resolve/main/P1.zip```
+```https://huggingface.co/datasets/KublaiKhan1/CelebA-HQ/resolve/main/P2.zip```
+```https://huggingface.co/datasets/KublaiKhan1/CelebA-HQ/resolve/main/P3.zip```
+
+Unzip them.
 The contents of those folders goes into latent-diffusion/data/celebahq. 
 There should be 30k files there after this step.
 
