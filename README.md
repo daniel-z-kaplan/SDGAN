@@ -32,6 +32,7 @@ Upgrade torch to most recent version.
 
 
 Need to run both download scripts in LDM repo.
+```cd latent-diffusion```
 ```bash scripts/download_first_stages.sh```
 ```bash scripts/download_models.sh```
 
